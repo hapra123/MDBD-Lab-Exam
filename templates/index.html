@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bank Data Uploader</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef2f5;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      margin: 12px 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      background-color: #3498db;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    button.delete-btn {
+      background-color: #e74c3c;
+    }
+
+    button.delete-btn:hover {
+      background-color: #c0392b;
+    }
+
+    #output {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f7f9fa;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      white-space: pre-wrap;
+      font-family: Consolas, monospace;
+      font-size: 14px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bank Data Uploader</h1>
+
+    <button id="test-conn-btn">🔌 Test MongoDB Connection</button>
+    <button id="read-csv-btn">📂 Read First 5 Records</button>
+    <button id="read-db-btn">📖 Read First 5 Documents</button>
+    <button id="upload-btn">⬆️ Upload CSV to MongoDB</button>
+    <button id="delete-btn" class="delete-btn">🗑️ Delete All Documents</button>
+
+    <div id="output">Output will appear here...</div>
+  </div>
+
+  <script>
+    const output = document.getElementById('output');
+
+    function showOutput(text, showLoader = false) {
+      output.textContent = text + (showLoader ? ' ' : '');
+      if (showLoader) {
+        const loader = document.createElement('span');
+        loader.className = 'loader';
+        output.appendChild(loader);
+      }
+    }
+
+    async function callApi(path, options = {}) {
+      try {
+        const res = await fetch(path, options);
+        if (!res.ok) {
+          const errorText = await res.text();
+          showOutput(`❌ Error ${res.status}: ${errorText}`);
+          return;
+        }
+        const data = await res.json();
+        showOutput(JSON.stringify(data, null, 2));
+      } catch (err) {
+        showOutput('🚫 Fetch error: ' + err.message);
+      }
+    }
+
+    document.getElementById('test-conn-btn').addEventListener('click', () => {
+      showOutput('Testing MongoDB connection...', true);
+      callApi('/test-connection');
+    });
+
+    document.getElementById('read-db-btn').addEventListener('click', () => {
+      showOutput('Reading first 5 documents...', true);
+      callApi('/read-db?limit=5');
+    });
+
+    document.getElementById('read-csv-btn').addEventListener('click', () => {
+      showOutput('Reading CSV...', true);
+      callApi('/read_csv');
+    });
+
+    document.getElementById('upload-btn').addEventListener('click', () => {
+      showOutput('Uploading CSV data...', true);
+      callApi('/upload', { method: 'POST' });
+    });
+
+    document.getElementById('delete-btn').addEventListener('click', () => {
+      if (confirm('⚠️ Are you sure you want to delete all documents?')) {
+        showOutput('Deleting all documents...', true);
+        callApi('/delete-all', { method: 'DELETE' });
+      }
+    });
+  </script>
+</body>
+</html>

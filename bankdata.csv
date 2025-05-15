@@ -1,0 +1,101 @@
+sr_no,entity_name,category,regulator,fip_implementation_stage,fiu_implementation_stage
+1,AU Small Finance Bank Limited,Small Finance Bank,RBI,Live,Live
+2,Axis Bank,Private Sector Bank,RBI,Live,Live
+3,Bank of Baroda,Public Sector Bank,RBI,Live,Live
+4,Bank of India,Public Sector Bank,RBI,Live,Live
+5,Bank of Maharashtra,Public Sector Bank,RBI,Live,Live
+6,Canara Bank,Public Sector Bank,RBI,Live,Live
+7,Central Bank of India,Public Sector Bank,RBI,Live,Live
+8,Federal Bank,Private Sector Bank,RBI,Live,Live
+9,HDFC Bank,Private Sector Bank,RBI,Live,Live
+10,ICICI Bank,Private Sector Bank,RBI,Live,Live
+11,IDFC First Bank,Private Sector Bank,RBI,Live,Live
+12,Indian Bank,Public Sector Bank,RBI,Live,Live
+13,Indian Overseas Bank,Public Sector Bank,RBI,Live,Live
+14,IndusInd Bank,Private Sector Bank,RBI,Live,Live
+15,Karnataka Bank,Private Sector Bank,RBI,Live,Live
+16,Karur Vysya Bank (KVB),Private Sector Bank,RBI,Live,Live
+17,Kotak Mahindra Bank Limited,Private Sector Bank,RBI,Live,Live
+18,Punjab National Bank,Public Sector Bank,RBI,Live,Live
+19,Punjab & Sind Bank,Public Sector Bank,RBI,Live,Live
+20,SBI,Public Sector Bank,RBI,Live,Live
+21,Small Industries Development Bank of India (SIDBI),Financial Institution,RBI,Live,Live
+22,UCO Bank,Public Sector Bank,RBI,Live,Live
+23,Union Bank of India,Public Sector Bank,RBI,Live,Live
+24,Yes Bank,Private Sector Bank,RBI,Live,Live
+25,5Paisa Capital Limited,Stock Broker,SEBI,NA,Live
+26,Alice Blue Financial Services Pvt Ltd,Stock Broker,SEBI,NA,Live
+27,Alpha Capital,RIAs,SEBI,NA,Live
+28,Alphaware Advisory Services Private Limited,RIAs,SEBI,NA,Testing
+29,Amica Investment Advisers Private Limited (jupiter Money),RIAs,SEBI,NA,Live
+30,Angel Broking,Stock Broker,SEBI,NA,Testing
+31,Angel One Limited,Stock Broker,SEBI,NA,Live
+32,ASK Financial Holdings Pvt Ltd,NBFC,RBI,NA,Evaluating
+33,ASK Investment Managers Limited,Portfolio Manager,SEBI,NA,Evaluating
+34,ASK Property Investment Advisors Private Limited,Portfolio Manager,SEBI,NA,Evaluating
+35,Bajaj Finserv Direct Limited (Bajaj Markets),RIAs,SEBI,NA,Live
+36,ASK Wealth Advisors Private Limited,RIAs,SEBI,NA,Evaluating
+37,Bandhan Bank,Private Sector Bank,RBI,Evaluating,Evaluating
+38,Baroda Gujarat Gramin Bank,RRB,RBI,Live,Live
+39,Canara HSBC Life Insurance,Private Sector Life,IRDAI,Live,Live
+40,Circle Wealth Advisors Private Limited,RIAs,SEBI,NA,Evaluating
+41,Suco Bank,Co-operative Banks,RBI,In-Development,In-Development
+42,Citibank,Foreign Bank,RBI,Evaluating,Evaluating
+43,CAMS (myCAMS),RTA,SEBI,NA,Live
+44,Central Depository Services (India) Limited (CDSL),Depository,SEBI,Live,Evaluating
+45,Creditenable,NBFC,RBI,NA,Evaluating
+46,DBS Bank,Foreign Bank,RBI,Live,Testing
+47,DCB Bank,Private Sector Bank,RBI,Evaluating,Evaluating
+48,HSBC Bank,Foreign Bank,RBI,Live,Live
+49,Deutsche Bank AG,Foreign Bank,RBI,Evaluating,Evaluating
+50,Edelweiss Financial Services Limited,Stock Broker,SEBI,NA,Evaluating
+51,Aavas Financiers Limited,HFC,RBI,NA,Live
+52,Aditya Birla Housing Finance Limited,HFC,RBI,NA,Live
+53,Agrim Housing Finance,HFC,RBI,NA,Live
+54,Art Housing Finance (India) Limited,HFC,RBI,NA,Live
+55,Easy Home Finance Limited,HFC,RBI,NA,Live
+56,Equitas Bank,Small Finance Bank,RBI,Evaluating,Evaluating
+57,HDFC Ltd,HFC,RBI,NA,Live
+58,Home First Finance Company India Ltd,HFC,RBI,NA,Live
+59,IKF Home Finance Private Limited,HFC,RBI,NA,Live
+60,India Shelter Finance Corporation Limited,HFC,RBI,NA,Live
+61,KIFS Housing Finance Limited,HFC,RBI,NA,Live
+62,Aditya Birla Sun Life Insurance Ltd,Private Sector Life,IRDAI,Live,Live
+63,Bharat Financial Inclusion Ltd,MFI,RBI,NA,In-Development
+64,121 Finance Private Limited,NBFC-Factors,RBI,NA,Live
+65,Motilal Oswal Home Finance Limited,HFC,RBI,NA,Live
+66,Aditya Birla Finance Limited,NBFC,RBI,NA,Live
+67,Alstromeria Capital Private Limited (Finnxt),NBFC,RBI,NA,Live
+68,Amros Commercial Private Limited,NBFC,RBI,NA,Live
+69,Arthan Finance Private Limited,NBFC,RBI,NA,Live
+70,Ascend Bizcap Private Limited,NBFC,RBI,NA,Live
+71,ESAF Small Finance Bank,Small Finance Bank,RBI,Evaluating,Evaluating
+72,Avanse Financial Services Limited,NBFC,RBI,NA,Live
+73,Axis Finance,NBFC,RBI,NA,Live
+74,Bajaj Finance Limited (Bajaj Finserv),NBFC-D,RBI,Live,Live
+75,Bob Financial Solutions Limited,NBFC,RBI,NA,Live
+76,CapFloat Financial Services Private Limited (axio),NBFC,RBI,NA,Live
+77,Capital Trust Limited,NBFC,RBI,NA,Live
+78,Capri Global Capital Limited,NBFC,RBI,NA,Live
+79,Cars24 Financial Services,NBFC,RBI,NA,Live
+80,Centrum Broking Limited,Stock Broker,SEBI,NA,Live
+81,Chinmay Finlease Limited (Lenditt),NBFC,RBI,NA,Live
+82,Conatus Finserve Private Limited,NBFC,RBI,NA,Live
+83,Credit Saison,NBFC,RBI,NA,Live
+84,Credit Wise Capital,NBFC,RBI,NA,Live
+85,Godrej Housing Finance,HFC,RBI,NA,Evaluating
+86,DMI Finance Private Limited,NBFC,RBI,NA,Live
+87,EarlySalary Services Private Limited,NBFC,RBI,NA,Live
+88,Eduvanz Financing Private Limited,NBFC,RBI,NA,Live
+89,Eight Finance Private Limited,NBFC,RBI,NA,Live
+90,Ekagrata Finance Private Limited,NBFC,RBI,NA,Live
+91,Epimoney Private Limited (Flexiloans),NBFC,RBI,NA,Live
+92,Fairassets Technologies India Private Limited,NBFC-P2P,RBI,NA,Live
+93,Finnable Credit Private Limited,NBFC,RBI,NA,Live
+94,SMFG Indian Credit Company Limited (formerly Fullerton India Credit Co. Ltd),NBFC,RBI,NA,Live
+95,Girnar Capital Private Limited,NBFC,RBI,NA,Live
+96,Glaze Barter Private Limited,NBFC,RBI,NA,Testing
+97,Gromor Finance Private Limited,NBFC,RBI,NA,Live
+98,Harvinder Finance Company Private Limited (gmoney.loans),NBFC,RBI,NA,Live
+99,HDB Financial Services Limited,NBFC,RBI,NA,Live
+100,HDFC Credila Financial Services Limited,NBFC,RBI,NA,In-Development
