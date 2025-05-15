@@ -65,6 +65,7 @@ class MongoUploader:
             for error in bwe.details['writeErrors']:
                 if error['code'] == 11000:  # Duplicate key error code
                     print(f"Duplicate key error: {error['errmsg']}")
+                    print("--------------")
                 else:
                     print(error)
         except Exception as e:
@@ -85,6 +86,7 @@ class MongoUploader:
             print("--------------")
         except Exception as e:
             print(f"Error inserting false entry: {e}")
+            print("--------------")
 
     def delete_all_documents(self):
         try:
